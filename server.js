@@ -172,7 +172,6 @@ app.patch('/api/inventory/:sku/restock', async (req, res) => {
     res.status(400).json({ error: err.message });
   }
 });
-const path = require('path');
 app.use(express.static(path.join(__dirname, 'public'))); // ඔබේ folder එකේ නම 'public' නොවේ නම් එය වෙනස් කරන්න
 app.listen(PORT, () => {
   console.log(`The Marlow Full-Stack Server running on http://localhost:${PORT}`);
