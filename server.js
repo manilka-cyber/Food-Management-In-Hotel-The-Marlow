@@ -3,7 +3,6 @@ const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const path = require('path');
-app.use(express.static(path.join(__dirname, 'public'))); // ඔබේ folder එකේ නම 'public' නොවේ නම් එය වෙනස් කරන්න
 require('dotenv').config();
 const pool = require('./config/db');
 
